@@ -3,6 +3,7 @@
 /**
  * @author VAMPETA
  * @brief EXTRAI O VALOR DA LINHA
+ * @param line STRING DA LINHA PARA EXTRAIR O VALOR
  * @return RETORNA UMA String COM O VALOR
 */
 String extractValue(String line) {

@@ -4,6 +4,8 @@
 #include <M5Cardputer.h>
 #include <SD.h>
 #include <WiFi.h>
+#include <WiFiClientSecure.h>
+#include <HTTPClient.h>
 
 #define FILE "/whatsapp"
 
@@ -24,6 +26,13 @@ bool readCredentials(void);
 bool connectWifi(void);
 
 // ./keyboard.cpp
+void BtnGo(String &message);
+void enter(String &input);
+void del(String &input);
+void key(String &input);
 void keyboard(void);
+
+// ./send.cpp
+void sendText(String &message);
 
 #endif
