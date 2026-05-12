@@ -7,7 +7,7 @@
  */
 void BtnGo(String &message) {
     if (!M5Cardputer.BtnA.wasPressed()) return ;
-    sendText(message);
+    httpCode = sendText(message);
 }
 
 /**
@@ -18,6 +18,7 @@ void BtnGo(String &message) {
 void enter(String &input) {
     if (!M5Cardputer.Keyboard.keysState().enter) return ;
     sendText(input);
+    input = "";
     M5Cardputer.Display.println();
 }
 

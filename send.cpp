@@ -34,9 +34,7 @@ void sendText(String &message) {
     httpCode = http.POST(body);
     res = http.getString();
     http.end();
-    if (httpCode == 200) {
-        message = "";
-    } else if (httpCode != 200) {
+    if (httpCode != 200) {
         M5Cardputer.Display.println();
         M5Cardputer.Display.println(httpCode);
         M5Cardputer.Display.println(res);
