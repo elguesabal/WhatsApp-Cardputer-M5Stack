@@ -7,7 +7,7 @@
  */
 void BtnGo(String &message) {
     if (!M5Cardputer.BtnA.wasPressed()) return ;
-    httpCode = sendText(message);
+    sendText(message);
 }
 
 /**
